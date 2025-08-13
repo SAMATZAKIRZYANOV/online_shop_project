@@ -1,0 +1,164 @@
+.footer-container {
+  border-top: 1px solid #ccc;
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.footer-head {
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.footer-head > div {
+  flex: 1 1 280px;
+  min-width: 280px;
+}
+
+.footer-head h2 {
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+  color: #222;
+}
+
+.email-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.email-form input {
+  flex: 1;
+  padding: 12px 16px;
+  border: 1.5px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.email-form input:focus {
+  outline: none;
+  border-color: #3a7bd5;
+  box-shadow: 0 0 5px rgba(58, 123, 213, 0.5);
+}
+
+.email-form button {
+  background-color: #3a7bd5;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.email-form button:hover {
+  background-color: #2c5bbf;
+}
+
+.footer-head h3 {
+  font-size: 1.2rem;
+  margin-bottom: 16px;
+  color: #222;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+li:hover {
+  color: #3a7bd5;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  width: 100%;
+}
+
+a:hover {
+  color: #3a7bd5;
+}
+
+.nets {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.social-network {
+  padding: 10px;
+  border: 2px solid #3a7bd5;
+  border-radius: 12px;
+  color: #3a7bd5;
+  font-size: 1.3rem;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+}
+
+.social-network:hover {
+  background-color: #3a7bd5;
+  color: white;
+  border-color: #2c5bbf;
+}
+
+.footer-head > div:nth-child(1) > div {
+  margin-bottom: 40px;
+}
+
+.footer-head > div:nth-child(1) > div:last-child span {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #3a7bd5;
+}
+
+@media (max-width: 900px) {
+  .footer-head {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 700px) {
+  .footer-head {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-head > div {
+    max-width: 100%;
+    min-width: auto;
+  }
+
+  .email-form {
+    flex-direction: column;
+  }
+
+  .email-form input,
+  .email-form button {
+    width: 100%;
+  }
+
+  .nets {
+    justify-content: center;
+  }
+}
