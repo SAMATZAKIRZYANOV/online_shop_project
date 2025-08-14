@@ -19,17 +19,14 @@ export const productsAPI = {
     },
 
     addReview: async (productId, review) => {
-        // Получаем текущий товар
         const product = await instance.get(`/products/${productId}`).then(res => res.data);
 
-        // Добавляем новый отзыв
         const newReview = {
             ...review,
             id: `rev-${productId}-${Date.now()}`
         };
         const updatedReviews = [...(product.reviews || []), newReview];
 
-        // Обновляем товар
         const updatedProduct = { ...product, reviews: updatedReviews };
         await instance.put(`/products/${productId}`, updatedProduct);
 
